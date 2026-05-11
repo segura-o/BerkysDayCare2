@@ -1,10 +1,16 @@
 {
-  "name": "${PROJECT_NAME}",
+  "name": "BerkysDayCare2",
+  "homepage": "https://segura-o.github.io/BerkysDayCare2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "firebase": "^12.12.1"
+  }
 }
